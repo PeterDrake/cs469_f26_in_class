@@ -26,7 +26,7 @@ def train(input, teacher):
               )
     # Update weights
     global weights
-    weights = weights - learning_rate * change
+    weights -= learning_rate * change
 
 for input in inputs:
     print(f'{input} -> {neuron(input)}')
